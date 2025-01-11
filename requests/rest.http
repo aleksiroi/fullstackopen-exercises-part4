@@ -1,0 +1,53 @@
+POST  http://localhost:3001/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InZlaWtrYXJvaSIsImlkIjoiNjc4MjYzNDM3ZTQyYzVhNzZiNzcxZDllIiwiaWF0IjoxNzM2NjAzNjY2LCJleHAiOjE3MzY2MDcyNjZ9.1vt4CTwf6osbyIUoh07BofkVWumJmXd_02B9SiQwMDw
+
+{
+  "title": "raappa",
+  "author": "kanta",
+  "url": "http://www.blogger.com",
+  "likes": 255
+}
+
+###
+
+POST  http://localhost:3001/api/users
+Content-Type: application/json
+
+{
+  "username": "veikkaroi",
+  "name": "Veikka",
+  "password": "salainen"
+}
+
+###
+
+POST  http://localhost:3001/api/login
+Content-Type: application/json
+
+{
+  "username": "veikkaroi",
+  "password": "salainen"
+}
+
+###
+
+GET http://localhost:3001/api/blogs/67822a995e4355eeda157eda
+
+###
+
+GET http://localhost:3001/api/blogs
+
+###
+
+GET http://localhost:3001/api/users
+
+
+###
+
+DELETE http://localhost:3001/api/blogs/678263547e42c5a76b771da5
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InZlaWtrYXJvaSIsImlkIjoiNjc4MjYzNDM3ZTQyYzVhNzZiNzcxZDllIiwiaWF0IjoxNzM2NjAzNjY2LCJleHAiOjE3MzY2MDcyNjZ9.1vt4CTwf6osbyIUoh07BofkVWumJmXd_02B9SiQwMDw
+
+###
+
+DELETE http://localhost:3001/api/blogs
